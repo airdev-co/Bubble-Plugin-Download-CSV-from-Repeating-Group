@@ -1,0 +1,29 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Repeating Group to CSV",
+    "icon": "ion-ios-grid-view-outline",
+    "states": {
+        "AAQ": {
+            "caption": "CSV",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "csv",
+            "value": "file"
+        },
+        "AAT": {
+            "caption": "CSV Text",
+            "doc": "Raw text of the CSV file",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "csvText",
+            "value": "text"
+        }
+    }
+}

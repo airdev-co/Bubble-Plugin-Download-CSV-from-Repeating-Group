@@ -1,0 +1,73 @@
+{
+    "caption": "Get CSV from Repeating Group",
+    "doc": "",
+    "fields": {
+        "AAJ": {
+            "caption": "RepeatingGr HTML ID",
+            "editor": "DynamicValue",
+            "name": "repeating_group_HTML_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAL": {
+            "caption": "Use element IDs for headers (when available)",
+            "default_val": true,
+            "doc": "Use the inputted ID attribute for elements for the CSV column headers (default headers will be used where no ID is provided)",
+            "editor": "Checkbox",
+            "name": "useElementIds",
+            "rank": 1
+        },
+        "AAM": {
+            "caption": "Number of Rows",
+            "editor": "DynamicValue",
+            "name": "number_of_rows",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        },
+        "AAR": {
+            "caption": "filename",
+            "default_val": "export.csv",
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "rank": 3,
+            "value": "text"
+        },
+        "AAW": {
+            "caption": "Get CSV Text",
+            "default_val": true,
+            "doc": "Expose the CSV text. For large CSVs, disabling this text should improve performance a little (if you only want to export the file).",
+            "editor": "Checkbox",
+            "name": "get_csv_text",
+            "rank": 4
+        },
+        "AAX": {
+            "caption": "Get CSV File",
+            "default_val": true,
+            "doc": "Expose the CSV file. For large CSVs, disabling this file should improve performance a little (if you only want to export the text).",
+            "editor": "Checkbox",
+            "name": "get_csv_file",
+            "rank": 5
+        },
+        "AAZ": {
+            "caption": "File Type",
+            "default_val": "CSV",
+            "doc": "Set the separator for the exported file",
+            "editor": "Dropdown",
+            "name": "file_type",
+            "options": "CSV,TSV,; separated CSV,| separated CSV",
+            "rank": 6,
+            "value": "text"
+        },
+        "AAd": {
+            "caption": "Quotes to use around escaped cells",
+            "default_val": "\"",
+            "doc": "Choose a type of quotes to use to surround cells that contain characters which must be escaped. For example, if a cell contains a comma and the CSV uses commas to separate the cells, the text of this cell will be surrounded by quotes.",
+            "editor": "Dropdown",
+            "name": "quote_char",
+            "options": "\",'",
+            "rank": 7
+        }
+    }
+}

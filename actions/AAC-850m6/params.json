@@ -1,0 +1,57 @@
+{
+    "category": "plugins",
+    "display": "RepeatingGroup Text to CSV",
+    "fields": {
+        "AAD": {
+            "caption": "RepeatingGr HTML ID",
+            "editor": "DynamicValue",
+            "name": "repeating_group_HTML_id",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAF": {
+            "caption": "Use element IDs for headers (when available)",
+            "default_val": false,
+            "doc": "Use the inputted ID attribute for elements for the CSV column headers (default headers will be used where no ID is provided)",
+            "editor": "Checkbox",
+            "name": "useElementIds",
+            "rank": 1
+        },
+        "AAG": {
+            "caption": "Number of Rows",
+            "editor": "DynamicValue",
+            "name": "number_of_rows",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        },
+        "AAS": {
+            "caption": "filename",
+            "default_val": "export.csv",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAa": {
+            "caption": "File Type",
+            "default_val": "CSV",
+            "doc": "Set the separator for the exported file",
+            "editor": "Dropdown",
+            "name": "file_type",
+            "options": "CSV,TSV,; separated CSV,| separated CSV",
+            "rank": 4
+        },
+        "AAe": {
+            "caption": "Quotes to use around escaped cells",
+            "default_val": "\"",
+            "doc": "Choose a type of quotes to use to surround cells that contain characters which must be escaped. For example, if a cell contains a comma and the CSV uses commas to separate the cells, the text of this cell will be surrounded by quotes.",
+            "editor": "Dropdown",
+            "name": "quote_char",
+            "options": "\",'",
+            "rank": 5
+        }
+    },
+    "type": "client_side"
+}

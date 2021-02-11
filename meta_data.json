@@ -1,0 +1,16 @@
+{
+    "categories": {
+        "0": "visual elements",
+        "1": "analytics",
+        "2": "productivity",
+        "3": "small business",
+        "4": "data (things)"
+    },
+    "description": "A simple plugin to allow you to download a CSV of all text elements from within a repeating group. Helpful for calculated fields (not stored in database) that you currently can't export through Bubble's export as CSV feature.\n\nRepeating Group elements must be visible on the page for this to work.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1530297209761x634757411200553200/if_csv_199249.svg",
+    "instructions": "1. Create a repeating group on the page\n2. Set the repeating group to \"Full List\"\n3. Set the HTML id attribute of the repeating group to a unique name\n4. Enter the columns of your CSV (from left to right) as text elements.\n5. Create a workflow action. From the plugins section, select \"RepeatingGroup Text to CSV\"",
+    "license": "open_source",
+    "link": "https://airdev.co",
+    "name": "Download CSV from Repeating Group",
+    "plugin_instructions": "1. Create a repeating group on the page\n2. Set the repeating group to \"Full List\"\n3. Set the HTML id attribute of the repeating group to a unique name\n4. Enter the columns of your CSV (from left to right) as text elements.\n5. Create a workflow action. From the plugins section, select \"RepeatingGroup Text to CSV\""
+}
